@@ -49,14 +49,14 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-server '188.166.33.167',
-  user: 'usr03',
-  roles: %w{web app db},
-  ssh_options: {
-    user: 'usr03', # overrides user setting above
-    port: 54321,
-    # keys: %w(/home/user_name/.ssh/id_rsa),
-    forward_agent: false,
-    #auth_methods: %w(publickey password),
-    password: '8round6z'
-  }
+# server '188.166.33.167',
+#   user: 'usr03',
+#   roles: %w{web app db},
+#   ssh_options: {
+#     user: 'usr03', # overrides user setting above
+#     port: 54321,
+#     # keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     #auth_methods: %w(publickey password),
+#     password: '8round6z'
+#   }
