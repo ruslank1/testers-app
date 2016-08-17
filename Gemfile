@@ -56,8 +56,9 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'will_paginate-bootstrap'
 group :development do
-  gem "capistrano", "~> 3.6"
-  gem 'capistrano-bundler'
-  gem 'capistrano-passenger', '>= 0.1.1'
-  gem 'capistrano-rails'
+    gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
 end
