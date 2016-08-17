@@ -51,7 +51,7 @@
 # ------------------------------------
 server '188.166.33.167',
   user: 'usr03',
-  roles: %w{web app},
+  roles: %w{web app db},
   ssh_options: {
     user: 'usr03', # overrides user setting above
     port: 54321,
