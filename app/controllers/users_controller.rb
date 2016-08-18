@@ -72,20 +72,20 @@ class UsersController < ApplicationController
     end
   end
 
-  def send_profile_card
-    begin
-      UserMailer.user_card_mail(@user, current_user.email).deliver!
-      flash[:notice] = "User cart has been sent to your email"
-    rescue
-      flash[:alert] = "Mailer error. Contact administrator"
-    end
+  # def send_profile_card
+  #   begin
+  #     UserMailer.user_card_mail(@user, current_user.email).deliver!
+  #     flash[:notice] = "User cart has been sent to your email"
+  #   rescue
+  #     flash[:alert] = "Mailer error. Contact administrator"
+  #   end
 
-    begin
-      redirect_to :back
-    rescue ActionController::RedirectBackError
-      redirect_to user_path @user
-    end
-  end
+  #   begin
+  #     redirect_to :back
+  #   rescue ActionController::RedirectBackError
+  #     redirect_to user_path @user
+  #   end
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.

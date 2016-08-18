@@ -5,11 +5,11 @@ Rails.application.routes.draw do
     }, :path => 'auth', :path_names => {
     :sign_in => 'login', :sign_out => 'logout'
   }
-  resources :users do
-    member do
-      get 'send_profile_card'
-    end
-  end
+  # resources :users do
+  #   member do
+  #     get 'send_profile_card'
+  #   end
+  # end
 
   devise_scope :user do
     authenticated :user do

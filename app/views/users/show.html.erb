@@ -22,7 +22,7 @@
   <div class="col-sm-2"><%= @user.profile %></div>
 </div>
 
-<%= link_to 'Send profile card to email', send_profile_card_user_path(@user),
+<%#= link_to 'Send profile card to email', send_profile_card_user_path(@user),
   :class => "btn btn-default"%>
 <%= link_to 'Edit', edit_user_path(@user), :class => "btn btn-default" %> |
 <%= link_to 'Back', users_path, :class => "btn btn-default" %>
