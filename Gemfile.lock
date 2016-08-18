@@ -217,9 +217,9 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   byebug
-  capistrano
-  capistrano-bundler
-  capistrano-rails
+  capistrano (~> 3.4)
+  capistrano-bundler (~> 1.1.2)
+  capistrano-rails (~> 1.1)
   capistrano-rvm
   capistrano3-puma
   carrierwave
