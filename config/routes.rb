@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   #     get 'send_profile_card'
   #   end
   # end
+  resources :users
 
   devise_scope :user do
     authenticated :user do
