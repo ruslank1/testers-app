@@ -87,12 +87,12 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = {
-    host: 'localhost', port: 3000
+    host: 'light-it-03.tk'
   }
 
   config.action_mailer.default_options = {from: 'rkotsuruba@gmail.com'}
 
-  config.action_mailer.asset_host = 'testers-li.herokuapp.com'
+  config.action_mailer.asset_host = 'light-it-03.tk'
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -101,8 +101,8 @@ Rails.application.configure do
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "gmail.com",
-      :user_name            => ENV['SMTP_EMAIL'],
-      :password             => ENV['SMTP_PASSWORD'],
+      :user_name            => "rkotsuruba@gmail.com",
+      :password             => "8?HR[O;HcWnN:Zk##",
       :authentication       => :plain,
       :enable_starttls_auto => true
   }
